@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    height: fit-content;
+    border-radius: 0.375rem;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 0.9375rem;
+}
+
+main.wrapper {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 4.625rem;
+    padding: 11.8vh 11.5vw;
+}
+
+.section-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10rem;
+}
+
+section.intro {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+section.intro h1 {
+    font-size: 2.625rem;
+    font-weight: 700;
+    color: #502050;
+}
+
+section.intro p {
+    font-weight: 400;
+    line-height: 1.33rem;
+    color: #937b92;
+    padding-right: 7rem;
+}
+
+section.ratings {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+section.ratings .rating{
+    background-color: #f7f2f7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+    padding: 1.125rem 1.875rem;
+}
+
+section.ratings .rating:nth-child(1) {
+    margin-right: 6rem;
+}
+
+section.ratings .rating:nth-child(2) {
+    margin: 0 3rem;
+}
+
+section.ratings .rating:nth-child(3) {
+    margin-left: 6rem;
+}
+
+section.ratings p.rating-info {
+    font-weight: 500;
+    color: #502050;
+}
+
+section.user-feedbacks {
+    display: flex;
+    flex-direction: row;
+    gap: 1.875rem;
+}
+
+section.user-feedbacks .user-feedback {
+    background-color: #502050;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+section.user-feedbacks .user-feedback:nth-child(2) {
+    margin-top: 1rem;
+}
+
+section.user-feedbacks .user-feedback:nth-child(3) {
+    margin-top: 2rem;
+}
+
+section.user-feedbacks .user-feedback .user .user-info {
+    font-weight: 500;
+    line-height: 1.3rem;
+}
+
+section.user-feedbacks .user-feedback .user .user-info .user-name {
+    color: #fff;
+}
+
+section.user-feedbacks .user-feedback .user .user-info .user-title {
+    color: #ee68a4;
+}
+
+section.user-feedbacks .user-feedback .user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+section.user-feedbacks .user-feedback .user img{
+    width: 2.5rem;
+    border-radius: 100%;
+}
+
+section.user-feedbacks .user-feedback .feedback {
+    color: #f7f2f7;
+    line-height: 1.2rem;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 375px) {
+    .card {
+        width: 100%;
+    }
+    body {
+        height: fit-content;
+    }
+    main.wrapper {
+        padding: 5.125rem 1.5rem;
+        gap: 3.125rem;
+    }
+    .section-wrapper {
+        flex-direction: column;
+        gap: 3.125rem;
+    }
+    section.intro {
+        width: 100%;
+        text-align: center;
+    }
+    section.intro h1 {
+        font-size: 2rem;
+        padding: 0 2.75rem;
+    }
+    section.intro p {
+        padding: 0 !important;
+    }
+    section.ratings {
+        padding-top: 0;
+        width: 100%;
+    }
+    section.ratings .rating {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+        margin: 0 !important;
+    }
+    section.user-feedbacks {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    section.user-feedbacks .user-feedback {
+        margin-top: 0 !important;
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    section.intro p {
+        padding-right: 16rem;
+    }
+}
