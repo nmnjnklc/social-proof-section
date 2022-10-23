@@ -73,6 +73,7 @@ section.ratings {
 }
 
 section.ratings .rating {
+  max-width: 23.75rem !important;
   background-color: #f7f2f7;
   display: flex;
   flex-direction: row;
